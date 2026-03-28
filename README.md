@@ -2,8 +2,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>AMani | Premium Veg & Fruit Exports</title>
-  <!-- Google Fonts + Simple Icons (Font Awesome CDN) -->
+  <title>AMani | Premium Veg & Fruit Exports Worldwide</title>
+  <!-- Google Fonts + Font Awesome Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
@@ -29,12 +29,10 @@
       padding: 0 32px;
     }
 
-    /* header / nav */
+    /* Header / Navigation */
     header {
-      background: #ffffffdd;
-      backdrop-filter: blur(12px);
       background: rgba(255, 255, 245, 0.96);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+      backdrop-filter: blur(12px);
       position: sticky;
       top: 0;
       z-index: 100;
@@ -53,13 +51,13 @@
       font-size: 2rem;
       font-weight: 800;
       letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #2b6e4c, #4c9f70);
+      background: linear-gradient(135deg, #2b6e4c, #e67e22);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
     .logo span {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 500;
       color: #6b4e2e;
       display: block;
@@ -82,19 +80,19 @@
       color: #e67e22;
     }
 
-    .contact-btn {
+    .contact-btn-nav {
       background: #2b6e4c;
       color: white !important;
       padding: 8px 20px;
       border-radius: 40px;
       transition: 0.2s;
     }
-    .contact-btn:hover {
+    .contact-btn-nav:hover {
       background: #e67e22;
       transform: translateY(-2px);
     }
 
-    /* hero section */
+    /* Hero Section */
     .hero {
       padding: 70px 0 60px;
       background: linear-gradient(112deg, #fef9ef 0%, #eaf7ed 100%);
@@ -109,7 +107,7 @@
     .hero-text {
       flex: 1.2;
     }
-    .hero-text .badge {
+    .badge {
       background: #ffedd5;
       color: #b45f1b;
       display: inline-block;
@@ -149,10 +147,14 @@
       flex: 0.9;
       text-align: center;
     }
-    .hero-image img {
-      max-width: 100%;
-      filter: drop-shadow(0 20px 20px rgba(0,0,0,0.08));
-      border-radius: 40px;
+    .hero-image .image-card {
+      background: #d9f0e3;
+      border-radius: 60px;
+      padding: 30px 20px;
+      box-shadow: 0 20px 25px -12px rgba(0,0,0,0.1);
+    }
+    .hero-image i {
+      margin: 0 10px;
     }
     .btn-group {
       display: flex;
@@ -191,7 +193,11 @@
       color: white;
     }
 
-    /* categories */
+    /* Products Section */
+    .products {
+      padding: 80px 0;
+      background: white;
+    }
     .section-title {
       text-align: center;
       font-size: 2.2rem;
@@ -204,10 +210,6 @@
       color: #5e776b;
       max-width: 650px;
       margin: 0 auto 48px auto;
-    }
-    .products {
-      padding: 80px 0;
-      background: white;
     }
     .category-grid {
       display: grid;
@@ -248,7 +250,7 @@
       font-size: 0.9rem;
     }
 
-    /* export features */
+    /* Features / Export Advantage */
     .features {
       background: #f4f8f4;
       padding: 70px 0;
@@ -267,6 +269,7 @@
       padding: 32px 20px;
       border-radius: 32px;
       transition: 0.2s;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.02);
     }
     .feature-item i {
       font-size: 2.8rem;
@@ -278,7 +281,7 @@
       margin-bottom: 12px;
     }
 
-    /* contact section */
+    /* Contact Section */
     .contact-section {
       padding: 80px 0;
       background: linear-gradient(120deg, #fffaf2, #fff5e8);
@@ -320,6 +323,38 @@
       text-decoration: none;
       color: #1e2f2b;
       font-weight: 500;
+    }
+    .contact-detail a:hover {
+      color: #e67e22;
+    }
+    .contact-buttons-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .contact-method-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #f0f4f0;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      color: #1e3a2f;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .contact-method-btn i {
+      font-size: 1.2rem;
+      color: #2b6e4c;
+    }
+    .contact-method-btn:hover {
+      background: #2b6e4c;
+      color: white;
+    }
+    .contact-method-btn:hover i {
+      color: white;
     }
     .social-links {
       display: flex;
@@ -383,14 +418,7 @@
       background: #e67e22;
     }
 
-    footer {
-      background: #14251f;
-      color: #cddfd7;
-      padding: 32px 0;
-      text-align: center;
-    }
-
-    /* floating contact quick */
+    /* Floating Quick Contact */
     .float-contact {
       position: fixed;
       bottom: 28px;
@@ -403,7 +431,6 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
       z-index: 99;
       backdrop-filter: blur(4px);
-      font-weight: 600;
     }
     .float-contact a {
       color: white;
@@ -412,10 +439,21 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      font-weight: 500;
     }
     .float-contact i {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
+
+    /* Footer */
+    footer {
+      background: #14251f;
+      color: #cddfd7;
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    /* Responsive */
     @media (max-width: 800px) {
       .navbar {
         flex-direction: column;
@@ -435,12 +473,13 @@
         right: 16px;
         padding: 8px 16px;
       }
-    }
-    img.placeholder-img {
-      background: #e0ebdf;
-      border-radius: 32px;
-      width: 100%;
-      max-width: 380px;
+      .hero-stats {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .contact-buttons-group {
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -456,21 +495,21 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#products">Produce</a></li>
-        <li><a href="#export">Export Edge</a></li>
-        <li><a href="#contact" class="contact-btn">Contact</a></li>
+        <li><a href="#export">Advantage</a></li>
+        <li><a href="#contact" class="contact-btn-nav">Contact</a></li>
       </ul>
     </div>
   </div>
 </header>
 
 <main>
-  <!-- Hero Section with export vibe -->
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container hero-grid">
       <div class="hero-text">
         <div class="badge"><i class="fas fa-globe-asia"></i> Worldwide Exporters</div>
         <h2>Fresh from farms <br> to <i>120+ countries</i></h2>
-        <p>Premium quality vegetables & fruits, ethically sourced, cold-chain preserved. AMani delivers nature’s finest to global markets.</p>
+        <p>Premium quality vegetables & fruits, ethically sourced, cold-chain preserved. AMani delivers nature's finest to global markets.</p>
         <div class="btn-group">
           <a href="#contact" class="btn-primary">Request a quote <i class="fas fa-arrow-right"></i></a>
           <a href="#products" class="btn-outline">Explore range</a>
@@ -482,18 +521,17 @@
         </div>
       </div>
       <div class="hero-image">
-        <!-- fresh fruit/veg decorative illustration (font awesome + styled) -->
-        <div style="background: #d9f0e3; border-radius: 60px; padding: 20px;">
-          <i class="fas fa-apple-alt" style="font-size: 7rem; color:#e67e22; margin:0 10px;"></i>
-          <i class="fas fa-carrot" style="font-size: 6rem; color:#2b6e4c; margin:0 10px;"></i>
-          <i class="fas fa-pepper-hot" style="font-size: 5.5rem; color:#c23b22; margin:0 10px;"></i>
+        <div class="image-card">
+          <i class="fas fa-apple-alt" style="font-size: 6rem; color:#e67e22;"></i>
+          <i class="fas fa-carrot" style="font-size: 5.5rem; color:#2b6e4c;"></i>
+          <i class="fas fa-pepper-hot" style="font-size: 5rem; color:#c23b22;"></i>
           <p style="margin-top: 20px; font-weight:500;">🍅🥑🥬 premium export grade</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Products / Vegetables & Fruits Showcase -->
+  <!-- Products / Vegetables & Fruits -->
   <section id="products" class="products">
     <div class="container">
       <h2 class="section-title">Our export selection</h2>
@@ -516,14 +554,14 @@
         </div>
         <div class="card">
           <div class="card-icon"><i class="fas fa-seedling"></i></div>
-          <h3>Root & Tubers</h3>
+          <h3>Roots & Tubers</h3>
           <p>Potato, Ginger, Turmeric, Sweet Potato — high yield & organic.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Export advantage / why us -->
+  <!-- Export Advantage -->
   <section id="export" class="features">
     <div class="container">
       <h2 class="section-title">Why AMani for global exports?</h2>
@@ -537,25 +575,45 @@
     </div>
   </section>
 
-  <!-- Contact Section with number & email -->
+  <!-- Contact Section with both phone numbers + Telegram -->
   <section id="contact" class="contact-section">
     <div class="container">
       <div class="contact-wrapper">
         <div class="contact-info">
-          <h3>Let’s talk exports 🚢</h3>
+          <h3>Let's talk exports 🚢</h3>
           <p style="margin-bottom: 20px;">Reach out for bulk inquiries, partnerships, or sample orders. We respond within 24 hours.</p>
+          
+          <!-- India Number (WhatsApp/Call) -->
           <div class="contact-detail">
             <i class="fas fa-phone-alt"></i>
-            <p><strong>Call / WhatsApp</strong><br><a href="tel:+917040118014">+91 70401 18014</a></p>
+            <p><strong>India Office (Call / WhatsApp)</strong><br><a href="tel:+917040118014">+91 70401 18014</a></p>
           </div>
+          
+          <!-- New International Number + Telegram -->
+          <div class="contact-detail">
+            <i class="fab fa-telegram-plane"></i>
+            <p><strong>International / Telegram</strong><br><a href="tel:+79934674423">+7 993 467 4423</a></p>
+          </div>
+          
+          <!-- Email -->
           <div class="contact-detail">
             <i class="fas fa-envelope"></i>
             <p><strong>Email us</strong><br><a href="mailto:rafeymaniyar7@gmail.com">rafeymaniyar7@gmail.com</a></p>
           </div>
-          <div class="contact-detail">
-            <i class="fas fa-map-marker-alt"></i>
-            <p><strong>Global Trade Hub</strong><br>Mumbai, India — Gateway to world markets</p>
+          
+          <!-- Quick contact buttons: WhatsApp, Telegram, Call -->
+          <div class="contact-buttons-group">
+            <a href="https://wa.me/917040118014?text=Hello%20AMani%2C%20I'm%20interested%20in%20export%20products" target="_blank" class="contact-method-btn">
+              <i class="fab fa-whatsapp"></i> WhatsApp (India)
+            </a>
+            <a href="https://t.me/+79934674423" target="_blank" class="contact-method-btn">
+              <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="tel:+79934674423" class="contact-method-btn">
+              <i class="fas fa-phone"></i> Call Intl.
+            </a>
           </div>
+          
           <div class="social-links">
             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -588,42 +646,41 @@
 <footer>
   <div class="container">
     <p>© 2025 AMani Exports — Fresh vegetables & fruits, delivered worldwide. 🌍</p>
-    <p style="margin-top: 10px; font-size: 0.8rem;">📞 +91 70401 18014  |  ✉️ rafeymaniyar7@gmail.com</p>
+    <p style="margin-top: 10px; font-size: 0.8rem;">
+      📞 +91 70401 18014 (India) | 📞 +7 993 467 4423 (Intl / Telegram) | ✉️ rafeymaniyar7@gmail.com
+    </p>
   </div>
 </footer>
 
-<!-- floating quick contact bar -->
+<!-- Floating quick contact bar with both numbers and Telegram -->
 <div class="float-contact">
-  <a href="tel:+917040118014"><i class="fas fa-phone-alt"></i> Call</a>
+  <a href="tel:+917040118014"><i class="fas fa-phone-alt"></i> India</a>
   <a href="https://wa.me/917040118014?text=Hello%20AMani%2C%20I'm%20interested%20in%20export%20products" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  <a href="https://t.me/+79934674423" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
   <a href="mailto:rafeymaniyar7@gmail.com"><i class="fas fa-envelope"></i> Mail</a>
 </div>
 
 <script>
-  // simple interactive contact form handler (demo purpose - logs to console & shows feedback)
+  // Simple contact form handler with feedback
   const form = document.getElementById('inquiryForm');
   const feedback = document.getElementById('formFeedback');
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const message = document.getElementById('message').value.trim();
     if(!name || !email) {
       feedback.style.color = "#c23b22";
       feedback.innerText = "⚠️ Please enter your name and email address.";
       return;
     }
-    // Simulate sending (in real scenario, backend)
+    // Simulate successful submission
     feedback.style.color = "#2b6e4c";
     feedback.innerHTML = "✅ Thank you! Our export team will reach you shortly (within 24h).";
-    // Optionally clear or keep data for demo
     form.reset();
     setTimeout(() => {
       feedback.innerText = "";
     }, 5000);
-    console.log(`Inquiry from ${name}, ${email}, phone: ${phone}, msg: ${message}`);
-    // you can add actual mailto fallback or fetch API here
+    console.log(`Inquiry from ${name}, ${email}`);
   });
 </script>
 </body>
