@@ -1,5 +1,3 @@
-Here is a complete, ready-to-use HTML/CSS code for a modern, responsive website named "AMani" for your vegetable and fruit export business.
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
